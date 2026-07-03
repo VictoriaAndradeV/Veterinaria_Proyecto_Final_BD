@@ -11,6 +11,9 @@ public class Main {
             IniciarSesion iniciarSesion = new IniciarSesion();
             iniciarSesion.setVisible(true);
 
+            VistaAdmin vistaAdmin = new VistaAdmin();
+            vistaAdmin.setVisible(true);
+
             // GESTIÓN DE CLIENTES
             GestionClientes gestionClientes = new GestionClientes();
             //gestionClientes.setVisible(true);
