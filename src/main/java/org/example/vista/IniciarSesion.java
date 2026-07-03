@@ -73,12 +73,12 @@ public class IniciarSesion extends JFrame {
     }
 
     private void cargarLogo() {
-        URL urlLogo = getClass().getResource("/imagenes/logoSin.png");
+        URL urlLogo = getClass().getResource("/imagenes/logo22.png");
 
         if (urlLogo == null) {
             JOptionPane.showMessageDialog(
                     this,
-                    "No se encontró la imagen del logo.\nVerifica que esté en: src/main/resources/imagenes/logoSin.png",
+                    "No se encontró la imagen del logo.\nVerifica que esté en: src/main/resources/imagenes/logo22.png",
                     "Error",
                     JOptionPane.ERROR_MESSAGE
             );
@@ -88,8 +88,8 @@ public class IniciarSesion extends JFrame {
         ImageIcon iconoOriginal = new ImageIcon(urlLogo);
 
         Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(
-                170,
-                170,
+                190,
+                190,
                 Image.SCALE_SMOOTH
         );
 
