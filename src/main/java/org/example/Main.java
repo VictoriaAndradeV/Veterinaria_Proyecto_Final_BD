@@ -3,6 +3,7 @@ package org.example;
 import org.example.vista.GestionClientes;
 import org.example.vista.IniciarSesion;
 import org.example.vista.MenuEmpleadoGeneral;
+import org.example.vista.VistaAdmin;
 
 import javax.swing.*;
 
@@ -16,6 +17,9 @@ public class Main {
             //menuEmpleadoGeneral.setVisible(true);
             GestionClientes gestionClientes = new GestionClientes();
             gestionClientes.setVisible(true);
+
+            VistaAdmin vistaAdmin = new VistaAdmin();
+            vistaAdmin.setVisible(true);
         });
     }
 }

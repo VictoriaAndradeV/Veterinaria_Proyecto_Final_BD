@@ -18,7 +18,37 @@ public class GestionServicios extends JFrame {
     private JButton btnBuscar;
     private JTextField txfBuscar;
     private JPanel panelTabla;
-    private JTable tablaServicios;
     private JPanel panelBuscar;
     private JButton btnVolver;
+    private JTable tablaServicios;
+
+    public GestionServicios() {
+        setTitle("Gestión de Servicios");
+        setContentPane(panelPrincipal);
+        setSize(800, 500);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        btnVolver.addActionListener(e -> {
+            VistaAdmin vistaAdmin = new VistaAdmin();
+            vistaAdmin.setVisible(true);
+            dispose();
+        });
+
+        btnCrear.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Botón Crear presionado");
+        });
+
+        btnActualizar.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Botón Actualizar presionado");
+        });
+
+        btnBorrar.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Botón Borrar presionado");
+        });
+
+        btnBuscar.addActionListener(e -> {
+            JOptionPane.showMessageDialog(this, "Botón Buscar presionado");
+        });
+    }
 }
